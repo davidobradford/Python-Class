@@ -1,0 +1,5 @@
+hourlywage = float(input("Enter Employee's Wage Per Hour: "))
+reghours = int(input("Enter The Employee's Regular Hours For The Week: "))
+overtimehours = int(input("Enter The Employee's Overtime Hours For The Week: "))
+weeklypay = (hourlywage * reghours) + ((hourlywage * 1.5) * overtimehours)
+print("The Emplyee's Weekly Pay Is", weeklypay, ".")
