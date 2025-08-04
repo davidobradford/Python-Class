@@ -14,6 +14,7 @@ cmultiplier = 1.8
 class TempConverter(EasyFrame):
     """Computes and displays a converted tempterature, either Fahrenheit
     to Celsius OR Celsius to Fahrenheit depending on the users choice."""
+    
     def __init__(self):
         """Set up the window and widgets."""
         EasyFrame.__init__(self, title = """Temperature Converter""")
@@ -36,6 +37,7 @@ class TempConverter(EasyFrame):
         # The C to F button
         self.addButton(text = "<<<<<<<", row = 2, column = 1,
                                          command = self.convertCToFTemp)
+    
     # The event handling method for the first button
     def convertFToCTemp(self):
         """Inputs a Fahrenheit temp, computes
@@ -43,6 +45,7 @@ class TempConverter(EasyFrame):
         degreesF = self.inputField1.getNumber()
         degreesC = (degreesF - 32) * fmultiplier
         self.inputField2.setNumber(degreesC)
+    
     # The event handling method for the second button
     def convertCToFTemp(self):
         """Inputs a Celsius temp, computes
