@@ -16,6 +16,7 @@ dep_deduction = 3000.0
 class TaxCalculator(EasyFrame):
     """Computes and displays the Tax based On A Given Gross Income and
     Number of Dependants."""
+    
     def __init__(self):
         """Set up the window and widgets."""
         EasyFrame.__init__(self, title = """Tax Calculator""")
@@ -45,6 +46,7 @@ class TaxCalculator(EasyFrame):
                                               width = 20,
                                               precision = 2,
                                               state = "readonly")
+    
     # The event handling method for the button
     def computeTax(self):
         """Inputs the Gross Income and Number of Dependents, computes
